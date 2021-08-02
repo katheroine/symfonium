@@ -1,0 +1,9 @@
+# Installing Symfony CLI
+$ wget https://get.symfony.com/cli/installer -O - | bash
+$ symfony check:requirements
+$ symfony new symfonium.edu --full
+# It is important to set execute mode
+# for the web server system user (for apache: www-data)
+# on all project public files (public and var directories).
+$ composer require apache-pack
+$ composer install
