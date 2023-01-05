@@ -1,0 +1,10 @@
+<h1>Quote of the moment</h1>
+<p>
+    <cite style="font-size: 100px;">{{ quote.latin }}</cite>
+</p>
+<p>
+    <cite style="font-size: 50px;">{{ quote.english }}</cite>
+</p>
+<p style="font-size: 30px;">
+    {% if quote.author %} -- {{ quote.author }} {% endif %}
+</p>

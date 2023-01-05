@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class QuoteOfTheMomentController
+class QuoteOfTheMomentController extends AbstractController
 {
     private const QUOTES = [
         [
@@ -34,13 +34,13 @@ class QuoteOfTheMomentController
         ]
     ];
 
-    public function index(): Response
+    public function index()
     {
         $index = random_int(0, sizeof(self::QUOTES) - 1);
-        $quote = self::QUOTES[$index]['latin'];
+        $quote = self::QUOTES[$index];
 
-        $response = new Response($quote);
-
-        return $response;
+        return $this->render('quote_of_the_moment.html.twig', [
+            'quote' => $quote,
+        ]);
     }
 }
