@@ -7,3 +7,6 @@ $ symfony new symfonium.edu --full
 # on all project public files (public and var directories).
 $ composer require apache-pack
 $ composer install
+
+# Creating a page
+

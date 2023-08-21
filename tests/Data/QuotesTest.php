@@ -4,7 +4,6 @@ namespace App\Data;
 
 use PHPUnit\Framework\TestCase;
 
-
 class QuotesTest extends TestCase
 {
     private const PROPER_QUOTE_KEYS = [
