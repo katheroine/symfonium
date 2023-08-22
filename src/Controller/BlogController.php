@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class BlogController
 {
-  #[Route('/blog/')]
+  #[Route('/blog/', name: 'blog_posts')]
   public function posts(): Response
   {
     return new Response("<h1>Hello, there!</h1>");
