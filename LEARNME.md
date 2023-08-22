@@ -87,3 +87,26 @@ class LuckyNumberController extends AbstractController
 ```
 
 - Run `http://symfonium.edu.local/personal-lucky-number/somename` for the results.
+
+# Routing configuration
+
+- Create a controller `src/Controller/BlogController.php`.
+
+```php
+<?php
+
+namespace App\Controller;
+
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Response;
+
+class BlogController
+{
+  #[Route('/blog')]
+  public function posts(): Response
+  {
+    return new Response("<h1>Hello, there!</h1>");
+  }
+}
+
+```
