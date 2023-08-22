@@ -2,6 +2,10 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-app_quote_of_the_moment:
-    path: /quote-of-the-moment
-    controller: App\Controller\QuoteOfTheMomentController::index
+# app_quote_of_the_moment:
+#     path: /quote-of-the-moment
+#     controller: App\Controller\QuoteOfTheMomentController::index
+
+blog_post_categories:
+    path: /blog/categories
+    controller: App\Controller\BlogController::postCategories

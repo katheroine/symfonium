@@ -12,4 +12,9 @@ class BlogController
   {
     return new Response("<h1>Hello, there!</h1>");
   }
+
+  public function postCategories(): Response
+  {
+    return new Response("<h1>Hi, there!</h1>");
+  }
 }
