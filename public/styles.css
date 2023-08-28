@@ -1,0 +1,42 @@
+body
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: darkslategrey;
+}
+
+main
+{
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h1, h2
+{
+    margin: 20px 10px;
+    color: white;
+}
+
+.post,
+.post-category
+{
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 22px 20px;
+}
+
+.post,
+.post-category,
+.post a,
+.post-category a
+{
+    color: darkslategrey;
+}
+
+.post-field-name
+{
+    margin-right: 10px;
+    font-weight: bold;
+}
