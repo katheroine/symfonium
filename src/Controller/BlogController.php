@@ -37,7 +37,27 @@ class BlogController
         ],
     ];
 
-    #[Route('/blog/', name: 'blog_posts')]
+    public function welcome(): Response
+    {
+        $content = '<!DOCTYPE html>
+            <html>
+            <head>
+            <link rel="stylesheet" href="../styles.css">
+            </head>
+            <body>
+            <main>
+            <h1>Welcome to our Blog ⭐</h1>
+            <h2>Don\'t be shy and visit our...</h2>
+            <div class="link-field"><a href="/blog/posts">Posts</a></div>
+            <div class="link-field"><a href="/blog/categories">Post categories</a></div>
+            </main>
+            </body>
+            </html>';
+
+        return new Response($content);
+    }
+
+    #[Route('/blog/posts', name: 'blog_posts')]
     public function posts(): Response
     {
         $content = '<!DOCTYPE html>

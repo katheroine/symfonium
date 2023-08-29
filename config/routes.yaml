@@ -6,6 +6,10 @@
 #     path: /quote-of-the-moment
 #     controller: App\Controller\QuoteOfTheMomentController::index
 
+blog_welcome:
+    path: /blog
+    controller: App\Controller\BlogController::welcome
+
 blog_post_categories:
     path: /blog/categories
     controller: App\Controller\BlogController::postCategories

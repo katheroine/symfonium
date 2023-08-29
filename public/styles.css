@@ -19,7 +19,8 @@ h1, h2
 }
 
 .post,
-.post-category
+.post-category,
+.link-field
 {
     background-color: white;
     border-radius: 10px;
@@ -30,12 +31,14 @@ h1, h2
 .post,
 .post-category,
 .post a,
-.post-category a
+.post-category a,
+.link-field a
 {
     color: darkslategrey;
 }
 
-.post-field-name
+.post-field-name,
+.link-field
 {
     margin-right: 10px;
     font-weight: bold;
